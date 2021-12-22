@@ -1,0 +1,347 @@
+version: "3.0"
+
+stories:
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: wherefrom
+  steps:
+  - intent: ask_wherefrom
+  - action: utter_ask_wherefrom
+
+- story: how old
+  steps:
+  - intent: ask_howold
+  - action: utter_ask_howold
+
+- story: how doing
+  steps:
+  - intent: how_doing
+  - action: utter_how_doing
+
+- story: happy path
+  steps:
+  - intent: mood_great
+  - action: utter_great
+  - action: utter_comewhenunhappy
+
+- story: busylife
+  steps:
+  - intent: busy_life
+  - action: utter_busy_life
+
+- story: want to talk
+  steps:
+  - intent: wanttotalk
+  - action: utter_wanttotalk
+
+- story: unhappy path
+  steps:
+  - intent: mood_unhappy
+  - action: utter_nod
+  - action: utter_unhappy
+
+- story: out of domain
+  steps:
+  - intent: out_of_domain
+  - action: utter_out_of_domain
+
+- story: project incomplete
+  steps:
+  - intent: projectincomplete
+  - action: utter_nod
+  - action: utter_projectincomplete
+
+- story: family issue
+  steps:
+  - intent: hate_family
+  - action: utter_hate_family
+  - intent: lack_of_love&care
+  - action: utter_lack_of_love&care
+  - action: utter_are_you_ok
+  - intent: affirm
+  - action: utter_great
+
+- story: thankyou
+  steps:
+  - intent: thankyou
+  - action: utter_welcome
+
+- story: arguement bot
+  steps:
+  - intent: youareabot
+  - action: utter_youareabot
+  - intent: surebot
+  - action: utter_surebot
+
+- story: lost beloved one
+  steps:
+  - intent: lost_beloved_one
+  - action: utter_lost_beloved_one
+
+- story: iagree
+  steps:
+  - intent: iagree
+  - action: utter_iagree
+
+- story: argument bot 2
+  steps:
+  - intent: youareabot
+  - action: utter_youareabot
+
+- story: argument bot 3
+  steps:
+  - intent: surebot
+  - action: utter_surebot
+
+- story: telljoke
+  steps:
+  - intent: telljoke
+  - action: utter_telljoke
+
+- story: handleinsult
+  steps:
+  - intent: handleinsult
+  - action: utter_handleinsult
+
+- story: feel lonely
+  steps:
+  - intent: feel_alone
+  - action: utter_feel_alone
+
+- story: exam failure
+  steps:
+  - intent: exam_failure
+  - action: utter_exam_failure
+
+- story: suicide
+  steps:
+  - intent: want_to_suicide
+  - action: utter_want_to_suicide
+  - action: utter_suicide_quote
+
+- story: financial issue
+  steps:
+  - intent: financial_issue
+  - action: utter_financial_issue
+
+- story: Love failure 1
+  steps:
+  - intent: love_failure
+  - action: utter_disappointment
+  - action: utter_love_failure
+  - intent: canttolerate
+  - action: utter_canttolerate
+  - intent: cant_live
+  - action: utter_cant_live
+  - intent: out_of_control
+  - action: utter_out_of_control
+  - action: utter_are_you_ok
+  - intent: affirm
+  - action: utter_great
+
+- story: Love failure 4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_ask_howdoing
+  - intent: mood_unhappy
+  - action: utter_unhappy
+  - intent: mood_unhappy
+  - action: utter_unhappy
+  - intent: love_failure
+  - action: utter_disappointment
+  - action: utter_love_failure
+  - intent: deep_love
+  - action: utter_deep_love
+  - intent: why_left_me
+  - action: utter_nod
+  - action: utter_why_left_me
+  - intent: cant_live
+  - action: utter_disappointment
+  - action: utter_love_failure
+  - intent: i_can't
+  - action: utter_out_of_control
+  - action: utter_mm?
+  - intent: affirm
+  - action: utter_great
+
+
+- story: Lack of job 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_ask_howdoing
+  - intent: mood_unhappy
+  - action: utter_unhappy
+  - intent: mood_unhappy
+  - action: utter_nod
+  - action: utter_unhappy
+  - intent: lack_of_job
+  - action: utter_disappointment
+  - action: utter_lack_of_job
+  - intent: lack_of_job
+  - action: utter_lack_of_job
+  - action: utter_mm?
+  - intent: affirm
+  - action: utter_great
+  - intent: affirm
+  - action: utter_great
+  - intent: studypressure
+  - action: utter_nod
+  - action: utter_studypressure
+  - intent: not_understanding_feeling
+  - action: utter_not_understanding_feeling
+
+- story: kill him
+  steps:
+  - intent: want_to_kill
+  - action: utter_want_to_kill
+
+- story: Lack of job 1
+  steps:
+  - intent: lack_of_job
+  - action: utter_disappointment
+  - action: utter_lack_of_job
+  - intent: lack_of_job
+  - action: utter_lack_of_job
+  - action: utter_mm?
+  - intent: affirm
+  - action: utter_great
+
+- story: depression
+  steps:
+  - intent: depression_severe
+  - action: utter_depression_severe
+
+- story: depression change place
+  steps:
+  - intent: changeplace_depression
+  - action: utter_nod
+  - action: utter_changeplace_depression
+
+- story: Cant tolerate
+  steps:
+  - intent: canttolerate
+  - action: utter_canttolerate
+  - action: utter_mm?
+
+- story: affirm
+  steps:
+  - intent: affirm
+  - action: utter_great
+
+
+- story: Work pressure 3
+  steps:
+  - intent: mood_unhappy
+  - action: utter_unhappy
+  - intent: workpressure
+  - action: utter_nod
+  - action: utter_workpressure
+  - intent: workpressure
+  - action: utter_workpressure
+  - intent: canttolerate
+  - action: utter_canttolerate
+  - action: utter_mm?
+  - intent: affirm
+  - action: utter_great
+
+- story: Work pressure 2
+  steps:
+  - intent: mood_unhappy
+  - action: utter_unhappy
+  - intent: workpressure
+  - action: utter_workpressure
+  - intent: canttolerate
+  - action: utter_canttolerate
+  - intent: workpressure
+  - action: utter_workpressure
+  - action: utter_mm?
+  - intent: affirm
+  - action: utter_great
+  - intent: goodbye
+  - action: utter_goodbye
+
+# - story: 
+#   steps:
+#   - intent: 
+#   - action: 
+
+# - story: 
+#   steps:
+#   - intent: 
+#   - action: 
+
+# - story: 
+#   steps:
+#   - intent: 
+#   - action: 
+
+# - story: 
+#   steps:
+#   - intent: 
+#   - action: 
+
+# - story: 
+#   steps:
+#   - intent: 
+#   - action: 
+
+# - story: 
+#   steps:
+#   - intent: 
+#   - action: 
+
+# - story: 
+#   steps:
+#   - intent: 
+#   - action: 
+
+# - story: 
+#   steps:
+#   - intent: 
+#   - action: 
+
+# - story: 
+#   steps:
+#   - intent: 
+#   - action: 
+
+# - story: 
+#   steps:
+#   - intent: 
+#   - action: 
+
+# - story: 
+#   steps:
+#   - intent: 
+#   - action: 
+
+# - story: 
+#   steps:
+#   - intent: 
+#   - action: 
+
+# - story: 
+#   steps:
+#   - intent: 
+#   - action: 
+
+# - story: 
+#   steps:
+#   - intent: 
+#   - action: 
+
+# - story: 
+#   steps:
+#   - intent: 
+#   - action: 
+
